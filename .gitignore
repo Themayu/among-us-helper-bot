@@ -1,0 +1,9 @@
+﻿# Object and binary output
+**/obj/
+**/bin/
+
+# JetBrains IDEA configuration
+.idea/
+
+# Don't know what this is, ignoring it
+among-us-bot.sln.DotSettings.user

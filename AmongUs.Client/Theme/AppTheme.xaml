@@ -1,0 +1,25 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=netstandard"
+        x:Class="AmongUs.Client.Theme.AppTheme">
+	
+	<Style Selector="Window">
+		<Setter Property="Background" Value="#3D3D3D" />
+	</Style>
+	
+	<Style Selector="TextBlock.Header">
+		<Setter Property="FontSize" Value="44.67" />
+	</Style>
+	
+	<Style Selector="TextBlock.Header.Connected">
+		<Setter Property="Foreground" Value="#8DE971" />
+	</Style>
+
+	<Style Selector="TextBlock.Header.Disconnected">
+		<Setter Property="Foreground" Value="#E51A1A" />
+	</Style>
+
+	<Styles.Resources>
+		<SolidColorBrush x:Key="ThemeForegroundBrush" Color="#DCDDDE" />
+	</Styles.Resources>
+</Styles>

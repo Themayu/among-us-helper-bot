@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:AmongUs.Client.ViewModels;assembly=AmongUs.Client"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="300" d:DesignWidth="300" Height="400" d:DesignHeight="400"
+        x:Class="AmongUs.Client.Views.MainWindow" Icon="/Assets/avalonia-logo.ico" Title="Among Us Helper: Client"
+        Classes="Window" Padding="10,10,10,10" CanResize="False" WindowStartupLocation="CenterScreen">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+	
+	<DockPanel HorizontalAlignment="Center" VerticalAlignment="Stretch">
+		<TextBlock x:Name="Header" DockPanel.Dock="Top"
+		           Text="{Binding Path=IsConnectedString}"
+		           HorizontalAlignment="Center" />
+		
+		<StackPanel Orientation="Vertical">
+			<TextBlock Text="Server address" HorizontalAlignment="Center" />
+		</StackPanel>
+	</DockPanel>
+</Window>
